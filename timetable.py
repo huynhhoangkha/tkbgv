@@ -24,7 +24,7 @@ def main():
 
     # Open output file
     outFile = open("timetable.csv", "w")
-    outFile.write("Subject,Start Date,Start Time,End Date,End Time,All Day Event,Description,Location,Private" + "\n")   
+    outFile.write("Subject,Start Date,Start Time,End Date,End Time,All Day Event,Description,Location,Private,Recurring" + "\n")   
     # Process records
     for rc in myClasses:
         print("----------------------")
@@ -64,7 +64,7 @@ def main():
             outFile.write("False,")
             outFile.write(",")
             outFile.write(location + ",")
-            outFile.write("True\n")
+            outFile.write("True,Y\n")
     outFile.close()
 
 main()
