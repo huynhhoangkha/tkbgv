@@ -64,7 +64,7 @@ def main():
             outFile.write("False,")
             outFile.write(",")
             outFile.write(location + ",")
-            outFile.write("True,Y\n")
+            outFile.write("False,Y\n")
     outFile.close()
 
 main()
